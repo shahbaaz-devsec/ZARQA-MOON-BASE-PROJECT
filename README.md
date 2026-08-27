@@ -39,26 +39,26 @@ The following terminal logs capture the live production deployment (`v67.0.0`), 
 
 #### 1. Automated Deployment & Virtual Environment Bootstrap
 *Execution of `--auto-deploy` bypassing global system states to natively compile and bootstrap the highly optimized SciPy/NumPy tensor environments.*  
-![Bootstrap 1](assets/images/ZMBP1.PNG)  
-![Bootstrap 2](assets/images/ZMBP2.PNG)
+![Bootstrap 1](assets/ZMBP1.PNG)  
+![Bootstrap 2](assets/ZMBP2.PNG)
 
 #### 2. Pre-Deployment Sanitization & Phased System Upgrades
 *Total eradication of port zombies via direct Virtual File System (`/proc/net/tcp`) tracking and APT Phased Updates synchronization.*  
-![Upgrade 1](assets/images/ZMBP3.PNG)  
-![Upgrade 2](assets/images/ZMBP4.PNG)
+![Upgrade 1](assets/ZMBP3.PNG)  
+![Upgrade 2](assets/ZMBP4.PNG)
 
 #### 3. Deterministic Pre-Flight Self-Test & Systemd Initialization
-*Execution of the tensor verification suite confirming Fréchet variance locked at $0.000003$, Ergodic Secrecy $\ge 12.76\text{ bits/s/Hz}$, and successful privilege dropping to the `zarqa` service account.*  
-![Self-Test](assets/images/ZMBP5.PNG)
+*Execution of the tensor verification suite confirming Fréchet variance locked at 0.000003, Ergodic Secrecy >= 12.76 bits/s/Hz, and successful privilege dropping to the `zarqa` service account.*  
+![Self-Test](assets/ZMBP5.PNG)
 
 #### 4. Continuous Daemon Status & Zero-GC Memory Flatline
 *`systemctl status zarqa-tensor.service` confirming absolute memory stability. Over 47+ hours of continuous tensor processing, the memory footprint flatlined flawlessly at 46.3 MB with a peak of 46.6 MB.*  
-![Systemd Status](assets/images/ZMBP6.PNG)
+![Systemd Status](assets/ZMBP6.PNG)
 
 #### 5. High-Frequency Biometric Telemetry Fusion (12M+ Iterations)
 *Live `journalctl` stream tracking the Fréchet mean optimizations. The system effortlessly breached 12,500,000 continuous matrix integrations without a single geometric failure, memory fragmentation, or thread yield abort.*  
-![Telemetry 1](assets/images/ZMBP7.PNG)  
-![Telemetry 2](assets/images/ZMBP8.PNG)
+![Telemetry 1](assets/ZMBP7.PNG)  
+![Telemetry 2](assets/ZMBP8.PNG)
 
 ---
 
