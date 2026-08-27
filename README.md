@@ -21,12 +21,14 @@ Constructed upon the **Lunar Settlement Tensor** $\mathcal{L}$ and the **Grand U
 ## 🏛️ Core Mathematical & Defensive Guarantees (Phase 0)
 
 ### Phase 0: Formal Verification & Unification Tensor Synthesis (`zarqa_formal_tensor_synthesis_core.py`)
-1. **Absolute Zero-Allocation Riemannian Optimization:** Computes the Fréchet Mean (Karcher Barycenter) of multi-sensor biometric data on the Symmetric Positive-Definite (SPD) manifold without triggering the Python Garbage Collector. All geometric operators ($\operatorname{Exp}_X$, $\operatorname{Log}_X$) are mathematically isomorphosed directly to static $O(1)$ L1-cache Thread-Local Storage (TLS) buffers via native UFunc vector broadcasting.
+1. **Absolute Zero-Allocation Riemannian Optimization:** Computes the Fréchet Mean (Karcher Barycenter) of multi-sensor biometric data on the Symmetric Positive-Definite (SPD) manifold without triggering the Python Garbage Collector. All geometric operators ($\text{Exp}_X$, $\text{Log}_X$) are mathematically isomorphosed directly to static $O(1)$ L1-cache Thread-Local Storage (TLS) buffers via native UFunc vector broadcasting.
    $$\mu = \arg\min_{y \in \mathcal{M}} \sum_{i=1}^{N} w_i d_R^2(y, x_i)$$
 2. **Continuous KKT Euclidean Bisection ($O(1)$ Dykstra Projections):** Enforces strict spectral condition-number bounds via exact $L_2$ projections onto the SPD cone. The residual mass-balance root $t^*$ is isolated via 80-iteration continuous bisection across statically allocated `clip_buf` memory addresses, mathematically locking the geometric variance to $3 \times 10^{-6}$.
 3. **Ergodic Secrecy Capacity Bounds:** Models physical-layer security (PLS) across Nakagami-$m$ fading channels using 64-point Generalized Laguerre quadrature. It guarantees an ergodic secrecy capacity $C_s \ge 12.76 \text{ bits/s/Hz}$ and an interception probability $< 2^{-256}$, fulfilling NASA cybersecurity requirements.
 4. **Fractional Stochastic Differential Equations (fSDEs):** Evaluates physiological drift and cognitive fatigue mapping as a jump-diffusion process using Caputo fractional derivatives, accurately accounting for human non-linear adaptation memory in partial lunar gravity ($0.16g$).
-5. **Asymptotic Lyapunov Control:** Governs the kinematic and error corrections via a non-linear control law $u = -k_1 e - k_2 \operatorname{sgn}(e)\vert{}e\vert{}^\gamma - k_3 \operatorname{sgn}(e)\vert{}e\vert{}^\alpha$. Lyapunov's direct method guarantees unconditional global asymptotic stability ($\dot{V} \le 0$).
+5. **Asymptotic Lyapunov Control:** Governs the kinematic and error corrections via a non-linear control law:
+   $$u = -k_1 e - k_2 \text{sgn}(e)\vert{}e\vert{}^\gamma - k_3 \text{sgn}(e)\vert{}e\vert{}^\alpha$$
+   Lyapunov's direct method guarantees unconditional global asymptotic stability ($\dot{V} \le 0$).
 6. **Immutable POSIX Execution Enclaves:** Dynamically resolves the true execution identity via the immutable kernel state (`os.getlogin()`), drops `uid=0` superuser privileges, explicitly sanitizes the inherited environment variables against the unprivileged `pwd` database, and binds secure VFS atomic operations (`O_TMPFILE`) via raw C-library `linkat` syscalls.
 
 ---
@@ -37,16 +39,16 @@ The following terminal logs capture the live production deployment (`v67.0.0`), 
 
 #### 1. Automated Deployment & Virtual Environment Bootstrap
 *Execution of `--auto-deploy` bypassing global system states to natively compile and bootstrap the highly optimized SciPy/NumPy tensor environments.*  
-![Bootstrap 1](assets/images/ZMBP1.PNG)
+![Bootstrap 1](assets/images/ZMBP1.PNG)  
 ![Bootstrap 2](assets/images/ZMBP2.PNG)
 
 #### 2. Pre-Deployment Sanitization & Phased System Upgrades
 *Total eradication of port zombies via direct Virtual File System (`/proc/net/tcp`) tracking and APT Phased Updates synchronization.*  
-![Upgrade 1](assets/images/ZMBP3.PNG)
+![Upgrade 1](assets/images/ZMBP3.PNG)  
 ![Upgrade 2](assets/images/ZMBP4.PNG)
 
 #### 3. Deterministic Pre-Flight Self-Test & Systemd Initialization
-*Execution of the tensor verification suite confirming Fréchet variance locked at $0.000003$, Ergodic Secrecy $\ge 12.76 \text{ bits/s/Hz}$, and successful privilege dropping to the `zarqa` service account.*  
+*Execution of the tensor verification suite confirming Fréchet variance locked at $0.000003$, Ergodic Secrecy $\ge 12.76\text{ bits/s/Hz}$, and successful privilege dropping to the `zarqa` service account.*  
 ![Self-Test](assets/images/ZMBP5.PNG)
 
 #### 4. Continuous Daemon Status & Zero-GC Memory Flatline
@@ -55,7 +57,7 @@ The following terminal logs capture the live production deployment (`v67.0.0`), 
 
 #### 5. High-Frequency Biometric Telemetry Fusion (12M+ Iterations)
 *Live `journalctl` stream tracking the Fréchet mean optimizations. The system effortlessly breached 12,500,000 continuous matrix integrations without a single geometric failure, memory fragmentation, or thread yield abort.*  
-![Telemetry 1](assets/images/ZMBP7.PNG)
+![Telemetry 1](assets/images/ZMBP7.PNG)  
 ![Telemetry 2](assets/images/ZMBP8.PNG)
 
 ---
@@ -68,6 +70,17 @@ ZARQA-MOON-BASE-PROJECT/
 ├── README.md
 ├── .gitignore
 ├── .zenodo.json                         # Automated Zenodo metadata citation schema
+│
+├── assets/
+│   └── images/                          # High-resolution production verification logs
+│       ├── ZMBP1.PNG
+│       ├── ZMBP2.PNG
+│       ├── ZMBP3.PNG
+│       ├── ZMBP4.PNG
+│       ├── ZMBP5.PNG
+│       ├── ZMBP6.PNG
+│       ├── ZMBP7.PNG
+│       └── ZMBP8.PNG
 │
 └── phase0_formal_tensor_synthesis/
     ├── zarqa_formal_tensor_synthesis_core.py  # Phase 0 runtime mathematical & cryptographic engine
@@ -137,8 +150,8 @@ If you use this codebase or mathematical architecture in your research, please c
   title        = {ZARQA Moon Base Project: Phase 0 Formal Tensor Synthesis Core (v67.0.0)},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.22125186},
-  url          = {[https://doi.org/10.5281/zenodo.22125186](https://doi.org/10.5281/zenodo.22125186)}
+  doi          = {10.5281/zenodo.22124935},
+  url          = {[https://doi.org/10.5281/zenodo.22124935](https://doi.org/10.5281/zenodo.22124935)}
 }
 
 @techreport{ahmed_zarqa_phase0_paper_2026,
