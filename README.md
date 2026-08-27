@@ -172,7 +172,3 @@ If you use this codebase or mathematical architecture in your research, please c
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.
 
 *Disclaimer: This codebase is a sovereign cyber-physical reference implementation designed for academic peer review, aerospace defense standardisation, and closed-loop biomedical telemetry verification.*
-
-```
-
-```
