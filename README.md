@@ -2,8 +2,10 @@
 
 [![DOI - Phase 0 Software](https://img.shields.io/badge/Zenodo%20Software-10.5281%2Fzenodo.22124935-blue)](https://doi.org/10.5281/zenodo.22124935)
 [![DOI - Phase 0 Paper](https://img.shields.io/badge/Zenodo%20Phase%200%20Paper-10.5281%2Fzenodo.22125186-00557f)](https://doi.org/10.5281/zenodo.22125186)
-[![DOI - Phase 1 Software (Latest)](https://img.shields.io/badge/Zenodo%20Software-10.5281%2Fzenodo.22227177-blue)](https://doi.org/10.5281/zenodo.22227177)
+[![DOI - Phase 1 Software](https://img.shields.io/badge/Zenodo%20Software-10.5281%2Fzenodo.22227177-blue)](https://doi.org/10.5281/zenodo.22227177)
 [![DOI - Phase 1 Paper](https://img.shields.io/badge/Zenodo%20Phase%201%20Paper-10.5281%2Fzenodo.22227319-00557f)](https://doi.org/10.5281/zenodo.22227319)
+[![DOI - Phase 2 Software (Latest)](https://img.shields.io/badge/Zenodo%20Software-10.5281%2Fzenodo.22307863-blue)](https://doi.org/10.5281/zenodo.22307863)
+[![DOI - Phase 2 Paper](https://img.shields.io/badge/Zenodo%20Phase%202%20Paper-10.5281%2Fzenodo.22308242-00557f)](https://doi.org/10.5281/zenodo.22308242)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Compliance: NASA HRP / NIST SP 800-56](https://img.shields.io/badge/Compliance-NASA%20HRP%20%7C%20NIST%20SP%20800--56-orange)](https://www.nasa.gov/hrp)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
