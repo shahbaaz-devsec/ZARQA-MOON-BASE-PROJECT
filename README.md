@@ -98,7 +98,7 @@ The following structural execution metrics confirm the absolute operational stab
 
 ---
 
-### Phase 2: Z-FROTA Core Physics & Cyber-Physical Orchestration (`zarqa_reusable_orbital_transportation_core.py`)
+### Phase 2: Zarqa Fully Reusable Orbital Transportation Architecture Core (Z-FROTA) Physics & Cyber-Physical Orchestration (`zarqa_reusable_orbital_transportation_core.py`)
 1. **Trust-Region Newton-Raphson Thermodynamics:** Eradicates IEEE-754 floating-point singularities in the Stefan-Boltzmann $T^4$ radiation calculations. Applies a strict topological physical floor ($T \ge 2.7$K) and a $\pm 500$K step clamp to guarantee unconditional implicit solver convergence.
 2. **Symplectic Velocity-Verlet Integration:** Replaces explicit Euler approximations with a 4-step symplectic manifold. Strictly conserves the Hamiltonian energy state across the digital twin to permanently eliminate phase-space drift and phantom velocities.
 3. **Topologically Confined Double-Ratchet:** Secures the HKDF cryptographic state progression by mapping `.root_key` operations entirely into the explicit `systemd` `ReadWritePaths` subspace. Bypasses the OS-level `ProtectSystem=strict` paradox via atomic inode swaps (`os.replace`).
